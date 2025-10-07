@@ -1,4 +1,4 @@
-def romanIoInt(romanInput):
+def romanToInt(romanInput):
     roman={'M':1000,'D':500, 'C':100, 'X':10,'V':5,'I':1}
     resultInteger=0
     for i in range(0,len(romanInput)-1):
@@ -7,4 +7,6 @@ def romanIoInt(romanInput):
         else:
             resultInteger+=roman[romanInput[i]]
     return resultInteger+roman[romanInput[-1]]
+roman=input("Enter a roman number:")
+print("Tnteger of the roman given is :",romanToInt(roman))
 
